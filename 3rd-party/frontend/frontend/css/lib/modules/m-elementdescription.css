@@ -1,0 +1,112 @@
+/*  .m-elementdescription    */
+
+.m-elementdescription {
+	padding: 35px 0 60px;
+}
+
+	.m-elementdescription:after {
+		display: block;
+		content: '';
+		height: 0;
+		clear: both;
+	}
+
+	.m-elementdescription-h1 {
+		margin: 0 0 25px 0;
+		color: #01a58d;
+		font-family: "FuturaNewLight";
+		font-size: 3.3em;
+		font-weight: normal;
+		line-height: 1;
+	}
+
+	.m-elementdescription-wrap {
+		margin: 0 370px 0 0;
+	}
+
+		.m-elementdescription-description {
+			margin: 0 0 0 215px;
+		}
+
+			.m-elementdescription-description > p {
+				padding: 0 0 25px 0;
+				font-size: 1.21em;
+				line-height: 1.5;
+			}
+
+			.m-elementdescription-graytxt {
+				color: #8c8c8c;
+				font-size: 1.07em;
+			}
+
+		.m-elementdescription-image {
+			float: left;
+			margin: 0 30px 0 0;
+		}
+
+	.m-elementdescription-advice {
+		position: relative;
+		float: right;
+		width: 300px;
+		border: 1px solid #01a58d;
+	}
+
+		.m-elementdescription-advice:after {
+			display: block;
+			content: '';
+			position: absolute;
+			z-index: 10;
+			left: -19px;
+			top: 50%;
+			height: 35px;
+			width: 35px;
+			margin: -10px 0 0 0;
+			background: #fff;
+			border-left: 1px solid #01a58d;
+			border-top: 1px solid #01a58d;
+			-moz-transform: rotate(-45deg); /* ��� Firefox */
+			-ms-transform: rotate(-45deg); /* ��� IE */
+			-webkit-transform: rotate(-45deg); /* ��� Safari, Chrome, iOS */
+			-o-transform: rotate(-45deg); /* ��� Opera */
+			transform: rotate(-45deg);
+		}
+
+.m-elementdescription-advice-wrap {
+			position: relative;
+			padding: 25px 30px 30px 30px;
+			background: #fff;
+		}
+
+			.m-elementdescription-advice-txt {
+				color: #01a58d;
+				font-size: 2.28em;
+				line-height: 1;
+			}
+
+.m-elementdescription .btn {
+	width: 100%;
+	margin: 30px 0 0 0;
+}
+
+.m-elementdescription-advice-score{position: relative;
+	padding: 30px 20px 30px 30px;font-family: "FuturaNewLight";
+	border-top: 1px solid #dadada;
+	color: #8c8c8c;
+}
+.m-elementdescription-advice-score:before{
+	display: block;content: "";position: absolute;top: -41px;right: 13px;height:1px;width:1px;border:20px solid;
+	border-color: transparent transparent #dadada transparent;
+}
+.m-elementdescription-advice-score:after{
+	display: block;content: "";position: absolute;top: -40px;right: 13px;height:1px;width:1px;border:20px solid;
+	border-color: transparent transparent #fff transparent;
+}
+.m-elementdescription-advice-wrapstar{margin: 10px 0;
+}
+.m-elementdescription-advice-wrapstar img{
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+.m-elementdescription-advice-why{font-size: 1.28em;font-family: "FuturaNewBook";
+}
+/*   // for .m-elementdescription    */

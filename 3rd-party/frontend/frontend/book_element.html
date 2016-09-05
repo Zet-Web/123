@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>build</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script data-main="js/main" src="js/lib/require.js"></script>
+
+    <!-- Stylesheets -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <script>
+        require(['app', 'modules/m-subnavigation'], function (App) {
+            App.start();
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+<div id="top-advertising" class="l-section"></div>
+
+
+<div id="top-navigation" class="l-section">
+    <div class="l-grid">
+        <div class="l-row">
+            <div class="l-full">
+
+                <div class="m-mainnavigation">
+                    <div class="navbar navbar-metro">
+                        <div class="navbar-inner">
+                            <div class="container">
+                                <a href="#" class="brand">
+                                    <img src="img/logo.png" alt="imhonet">
+                                </a>
+                                <ul class="nav">
+                                    <li><a href="#films">Фильмы</a></li>
+                                    <li><a href="#shows">Сериалы</a></li>
+                                    <li class="active"><a href="#books">Книги</a></li>
+                                    <li><a href="#games">Игры</a></li>
+                                    <li><a href="#music">Музыка</a></li>
+                                </ul>
+
+                                <a href="#" class="m-mainnavigation-page-left"></a>
+                                <a href="#" class="m-mainnavigation-page-right"></a>
+
+                                <form action="topsearch" class="navbar-search">
+                                    <input type="text" placeholder="Поиск по сайту">
+                                </form>
+                                <ul class="nav pull-right">
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Вход</a>
+                                        <ul class="dropdown-menu" style="padding-top:0">
+                                            <li>
+                                                <div class="well"
+                                                     style="margin-bottom:0;border-radius : 5px 5px 0 0; background-color: transparent; box-shadow : 0 0 0; border:0;">
+                                                    <form style="margin-bottom:0;">
+                                                        <div>
+                                                            <label class="control-label" for="inputLogin">Логин</label>
+
+                                                            <div class="controls">
+                                                                <input type="text" id="inputLogin"
+                                                                       placeholder="Имя пользователя">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <label class="control-label"
+                                                                   for="inputPassword">Пароль</label>
+
+                                                            <div class="controls">
+                                                                <input type="password" id="inputPassword"
+                                                                       placeholder="* * * * * *">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="controls">
+                                                                <label class="checkbox">
+                                                                    <input type="checkbox"> Запомнить меня
+                                                                </label>
+                                                                <button type="submit" class="btn">Вход</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="subnavigation" class="l-section">
+    <div class="l-grid">
+        <div class="l-row">
+            <div class="l-full">
+                <div class="m-subnavigation">
+                    <div class="m-subnavigation-item m-subnavigation-toggler">Рекомендуемое</div>
+                    <div class="m-subnavigation-item"><a href="#">Новинки книг</a></div>
+                    <div class="m-subnavigation-item"><a href="#"  class="active">Лучшее</a></div>
+                    <div class="m-subnavigation-item"><a href="#">Подборки</a></div>
+                    <div class="m-subnavigation-item"><a href="#">Мои книги</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="l-section m-elementprimary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="m-elementprimary-tohide">
+        <defs>
+            <filter id="blur">
+                <feGaussianBlur stdDeviation="2" />
+            </filter>
+        </defs>
+    </svg>
+    <div class="m-elementprimary-bg" style="filter:url(#blur);background-image: url('img/photogall/bg_user.jpg');">
+    </div>
+<div class="l-grid">
+<div class="l-row">
+    <div class="l-threequaters">
+        <div class="m-breadcrumbs"><a href="#">Книги</a> &rarr; <a href="#">Мистика, ужасы, триллеры</a></div>
+        <div class="m-elementprimary-txt">
+            <div class="m-elementprimary-title">Мастер и маргарита</div>
+            <div class="m-elementprimary-language">The Master and Margarita </div>
+            <div class="m-elementprimary-subtitle">Оцените книгу</div>
+            <div class="m-elementprimary-score">
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+                <div class="m-elementprimary-score-item"><img src="img/icons/i-star.jpg" alt=""></div>
+            </div>
+            <div class="m-elementprimary-subtitle">Рейтинг</div>
+            <p><b class="reiting">8.0</b> Имхонет</p>
+            <p><b class="reiting">7.6</b> IMDb</p>
+            <p><b class="reiting">7.4</b> Кинопоиск</p>
+            <p>&nbsp;</p>
+            <p><b>Год выпуска:</b> 2004</p>
+            <p><b>Жанр книги:</b> Мистика, ужасы, триллеры,<br/>
+                школьная клисика, литература XIX - XX веков</p>
+            <p><b>Входит в сборник:
+                </b> Он появился</p>
+            <p><b>Автор книги: </b> Михаил Булгаков</p>
+
+        </div>
+        <div class="sotial-net">Иконки соц сетей</div>
+        <div class="m-elementprimary-button">
+            <button class="btn btn-inverse btn-theme">Скачать</button>
+            <button class="btn btn-inverse btn-theme">Купить</button>
+            <button class="btn btn-inverse btn-theme">Аудиокнига</button>
+            <button class="btn btn-inverse btn-theme">Хочу почитать</button>
+        </div>
+
+
+    </div>
+    <div class="l-quater">
+        <div class="m-elementprimary-photo-user"><img src="img/dumm/img1.jpg" alt=""></div>
+    </div>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="el_desc" class="l-section">
+    <div class="l-grid">
+        <div class="l-row">
+            <div class="l-full">
+
+                <div class="m-elementdescription">
+                    <div class="m-elementdescription-h1">Описание книги</div>
+                    <div class="m-elementdescription-advice">
+                        <div class="m-elementdescription-advice-wrap">
+                            <div class="m-elementdescription-advice-txt">Стоит ли вам
+                                смотреть фильм
+                                «Велиий Гэтсби»?
+                            </div>
+                            <button class="btn btn-theme active" type="button">Проверить прямо сейчас</button>
+                        </div>
+                    </div>
+                    <div class="m-elementdescription-wrap">
+                        <div class="m-elementdescription-image">
+                            <img src="img/dumm/elen_desc.jpg" alt="">
+                        </div>
+                        <div class="m-elementdescription-description">
+
+                            <p>Весной 1927 года, в эпоху разлагающейся морали, блистательного джаза и «королей
+                                контрабандного
+                                алкоголя», Ник Каррауэй приезжает из Среднего Запада в Нью-Йорк. Преследуя собственную
+                                американскую
+                                мечту, он селится по соседству с таинственным, известным своими вечеринками миллионером
+                                Джеем
+                                Гэтсби, а на противоположном берегу бухты проживают его кузина Дэзи и её муж, повеса и
+                                аристократ,
+                                Том Бьюкенен.</p>
+
+                            <p>Так Ник оказывается вовлечённым в захватывающий мир богатых — их иллюзий, любви и
+                                обманов. Он
+                                становится свидетелем происходящего в этом мире и пишет историю невозможной любви,
+                                вечных мечтаний и
+                                человеческой трагедии, которые являются отражением современных времен и нравов.</p>
+
+                            <p class="m-elementdescription-graytxt">Рейтинг фильма на Имхонете: 8 из 10 по оценке 32
+                                7564
+                                пользователей, написавших 347 отзывов</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<div id="sim_entities" class="l-section" style="background: #E4E4E4;">
+
+    <div class="l-grid">
+        <div class="l-row">
+            <div class="l-full">
+
+                <div class="m-inlineimagelist">
+
+
+                    <h1 class="m-inlineimagelist-h1">Похожие книги</h1>
+
+                    <ul class="m-inlineimagelist-gallery">
+                        <li class="m-inlineimagelist-gallery-item">
+                            <a href="">
+                                <div class="m-inlineimagelist-gallery-image">
+                                    <img src="img/dumm/img1.jpg" alt="">
+                                </div>
+                                <div class="m-inlineimagelist-gallery-txt">Крестный отец</div>
+                            </a>
+                        </li>
+                        <li class="m-inlineimagelist-gallery-item">
+                            <a href="">
+                                <div class="m-inlineimagelist-gallery-image">
+                                    <img src="img/dumm/img2.jpg" alt="">
+                                </div>
+                                <div class="m-inlineimagelist-gallery-txt">Клан Сопрано</div>
+                            </a>
+                        </li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img3.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Гангстер</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img4.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Самый пьяный округв районе</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img5.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Оружейный барон</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img6.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Джонни Д.</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img1.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Крестный отец</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img2.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Клан Сопрано</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img3.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Гангстер</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img4.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Самый пьяный округв районе</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img5.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Оружейный барон</div>
+                        </a></li>
+                        <li class="m-inlineimagelist-gallery-item"><a href="">
+                            <div class="m-inlineimagelist-gallery-image"><img src="img/dumm/img6.jpg" alt="">
+                            </div>
+                            <div class="m-inlineimagelist-gallery-txt">Джонни Д.</div>
+                        </a></li>
+                    </ul>
+
+                    <button type="button" class="btn btn-large btn-theme">Все фильмы, похожие на «Великий Гэтсби»
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div id="comments" class="l-section" style="background: #e4e4e4;">
+<div class="l-grid">
+<div class="l-row">
+<div class="l-full">
+<div class="m-comments color-scheme-green">
+<h2 class="m-comments-title">Отзывы</h2>
+
+<div class="m-comments-item">
+    <div class="m-comments-user-avatar">
+        <img src="img/dumm/m-comments-user-avatar1.jpg" alt=""/>
+    </div>
+    <div class="m-comments-item-body">
+        <span class="m-comments-body-arrow"></span>
+								<span class="m-comments-rating">
+									8.0
+									<span class="m-comments-rating-arrow"></span>
+								</span>
+
+								<span class="m-comments-user-name">
+									Владислав Камельский
+								</span>
+								<span class="m-comments-date">
+									20 мая
+								</span>
+
+        <div class="m-comments-content">
+            Стоит сразу же отметить, что данная картина НЕ шедевр, как было уже сказано,
+            она не пробудет в вас какие-то чувства, но все же приятный, хорошо снятый фильм.
+            Мне до сих пор не очень понятно
+        </div>
+
+        <div class="m-comments-buttons-area clearfix">
+            <a class="m-comments-button-add-comment" href="#">Комментировать отзыв</a>
+
+            <div class="m-comments-buttons-likers">
+                <button class="btn btn-round btn-theme active">15</button>
+                <button class="btn btn-round btn-theme">15</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="m-comments-item">
+    <div class="m-comments-user-avatar">
+        <img src="img/dumm/m-comments-user-avatar2.jpg" alt=""/>
+    </div>
+    <div class="m-comments-item-body">
+        <span class="m-comments-body-arrow"></span>
+								<span class="m-comments-rating">
+									8.0
+									<span class="m-comments-rating-arrow"></span>
+								</span>
+
+								<span class="m-comments-user-name">
+									Владислав Камельский
+								</span>
+								<span class="m-comments-date">
+									20 мая
+								</span>
+
+        <div class="m-comments-content">
+            Порой Гэтсби кажется слишком уж затянутом, большинство сцен, можно было бы и срезать,
+            много пустых и лишних разговоров. Музыкальное сопровождение идеально вписывается
+            в атмосферу картины. Что насчет актеров, так мне кажется единственный и большой минус
+            это
+            Тобби Магуайр. Ему доверили фактически главную роль, ведь он рассказывает всю историю,
+            и не очень качественная игра, очень повредила данный фильм. Когда я читала книгу,
+            героя Тобби я представляла по другом, и именно в этот раз он мне очень разочаровал.
+            На против, стоит похвалить Леонардо ДиКаприо, своим талантом, эмоциями он буквально
+            спасает провальную игру Магуайра. Для меня Гэтсби в исполнение ДиКаприо стал лучшим
+            из всех Гэтсби которых я видела.
+        </div>
+
+        <div class="m-comments-buttons-area clearfix">
+            <a class="m-comments-button-add-comment active" href="#">Комментировать отзыв</a>
+
+            <div class="m-comments-buttons-likers">
+                <button class="btn btn-round btn-theme">345</button>
+                <button class="btn btn-round btn-theme active">15</button>
+            </div>
+        </div>
+
+        <div class="m-comments-form-add-comment clearfix">
+
+            <div class="m-comments-user-avatar">
+                <img src="img/dumm/m-comments-current-user-avatar.jpg" alt=""/>
+            </div>
+            <form>
+                <div class="m-comments-add-textarea">
+                    <textarea placeholder="Напишите ваш комментарий"></textarea>
+                </div>
+                <div class="m-comments-add-form-buttons">
+                    <button class="btn btn-small">Отменить</button>
+                    <button class="btn btn-theme active">Отправить</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="m-comments-item">
+    <div class="m-comments-user-avatar">
+        <img src="img/dumm/m-comments-user-avatar1.jpg" alt=""/>
+    </div>
+    <div class="m-comments-item-body">
+        <span class="m-comments-body-arrow"></span>
+								<span class="m-comments-rating">
+									8.0
+									<span class="m-comments-rating-arrow"></span>
+								</span>
+
+								<span class="m-comments-user-name">
+									Владислав Камельский
+								</span>
+								<span class="m-comments-date">
+									20 мая
+								</span>
+
+        <div class="m-comments-content">
+            Порой Гэтсби кажется слишком уж затянутом, большинство сцен, можно было бы и срезать,
+            много пустых и лишних разговоров. Музыкальное сопровождение идеально вписывается
+            в атмосферу картины. Что насчет актеров, так мне кажется единственный и большой минус
+            это
+            Тобби Магуайр. Ему доверили фактически главную роль, ведь он рассказывает всю историю,
+            и не очень качественная игра, очень повредила данный фильм. Когда я читала книгу,
+            героя Тобби я представляла по другом, и именно в этот раз он мне очень разочаровал.
+            На против, стоит похвалить Леонардо ДиКаприо, своим талантом, эмоциями он буквально
+            спасает провальную игру Магуайра. Для меня Гэтсби в исполнение ДиКаприо стал лучшим
+            из всех Гэтсби которых я видела.
+        </div>
+
+        <div class="m-comments-buttons-area clearfix">
+            <a class="m-comments-button-add-comment" href="#">Комментировать отзыв</a>
+
+            <div class="m-comments-buttons-likers">
+                <button class="btn btn-round btn-theme active">35</button>
+                <button class="btn btn-round btn-theme">55</button>
+            </div>
+        </div>
+
+        <!-- subitems -->
+        <div class="m-comments-item">
+            <div class="m-comments-user-avatar">
+                <img src="img/dumm/m-comments-user-avatar2.jpg" alt=""/>
+            </div>
+            <div class="m-comments-item-body">
+										<span class="m-comments-user-name">
+											Владислав Камельский
+										</span>
+										<span class="m-comments-date">
+											20 мая
+										</span>
+
+                <div class="m-comments-content">
+                    Порой Гэтсби кажется слишком уж затянутом, большинство сцен, можно было бы и
+                    срезать,
+                    много пустых и лишних разговоров. Музыкальное сопровождение идеально вписывается
+                    в атмосферу картины. Что насчет актеров, так мне кажется единственный и большой
+                    минус это
+                    Тобби Магуайр. Ему доверили фактически главную роль, ведь он рассказывает всю
+                    историю,
+                    и не очень качественная игра, очень повредила данный фильм. Когда я читала
+                    книгу,
+                    героя Тобби я представляла по другом, и именно в этот раз он мне очень
+                    разочаровал.
+                    На против, стоит похвалить Леонардо ДиКаприо, своим талантом, эмоциями он
+                    буквально
+                    спасает провальную игру Магуайра. Для меня Гэтсби в исполнение ДиКаприо стал
+                    лучшим
+                    из всех Гэтсби которых я видела.
+                </div>
+
+            </div>
+        </div>
+
+        <div class="m-comments-item">
+            <div class="m-comments-user-avatar">
+                <img src="img/dumm/m-comments-user-avatar1.jpg" alt=""/>
+            </div>
+            <div class="m-comments-item-body">
+										<span class="m-comments-user-name">
+											Владислав Камельский
+										</span>
+										<span class="m-comments-date">
+											20 мая
+										</span>
+
+                <div class="m-comments-content">
+                    Порой Гэтсби кажется слишком уж затянутом, большинство сцен, можно было бы и
+                    срезать,
+                    много пустых и лишних разговоров. Музыкальное сопровождение идеально вписывается
+                    в атмосферу картины. Что насчет актеров, так мне кажется единственный и большой
+                    минус это
+                    Тобби Магуайр. Ему доверили фактически главную роль, ведь он рассказывает всю
+                    историю,
+                    и не очень качественная игра, очень повредила данный фильм. Когда я читала
+                    книгу,
+                    героя Тобби я представляла по другом, и именно в этот раз он мне очень
+                    разочаровал.
+                    На против, стоит похвалить Леонардо ДиКаприо, своим талантом, эмоциями он
+                    буквально
+                    спасает провальную игру Магуайра. Для меня Гэтсби в исполнение ДиКаприо стал
+                    лучшим
+                    из всех Гэтсби которых я видела.
+                </div>
+
+            </div>
+        </div>
+        <!-- subitems end -->
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="footer" class="l-section">
+    <div class="l-grid">
+        <div class="l-row">
+            <div class="m-footer">
+
+                <div class="m-footer-richtext">
+
+                    <h3>Имхонет</h3>
+                    <h4>Рекомендательный сервис</h4>
+
+                    <div>
+                        Порой Гэтсби кажется слишком уж затянутом, большинство сцен, можно было бы и срезать, много
+                        пустых и лишних разговоров. Музыкальное сопровождение идеально вписывается в атмосферу картины.
+                        Что насчет актеров, так мне кажется единственный и большой минус это Тобби Магуайр. Ему доверили
+                        фактически главную роль, ведь он рассказывает всю историю, и не очень качественная игра, очень
+                        повредила данный фильм. Когда я читала книгу, героя Тобби я представляла по другом, и именно в
+                        этот раз он мне очень разочаровал. На против, стоит похвалить Леонардо ДиКаприо, своим талантом,
+                        эмоциями он буквально спасает провальную игру Магуайра. Для меня Гэтсби в исполнение ДиКапри
+                    </div>
+                </div>
+                <div class="m-footer-links">
+                    <ul>
+                        <li><a href="/">Имхонет</a></li>
+                        <li><a href="/">Фильмы</a></li>
+                        <li><a href="/">Сериалы</a></li>
+                        <li><a href="/">Книги</a></li>
+                        <li><a href="/">Музыка</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/">Игры</a></li>
+                        <li><a href="/">Видео встречи</a></li>
+                        <li><a href="/">Сообщество</a></li>
+                        <li><a href="/">Все разделы</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/">Публикации</a></li>
+                        <li><a href="/">Блог Имхонета</a></li>
+                        <li><a href="/">Правообладателям</a></li>
+                        <li><a href="/">Реклама на сайте</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/">О проекте</a></li>
+                        <li><a href="/">Правила пользования</a></li>
+                        <li><a href="/">Помощь</a></li>
+                        <li><a href="/">Инструменты</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<div class="m-evaluator-gallery-item-container">
+    <div class="m-evaluator-gallery-chose" <% if (data.items && data.items[0] && data.items[0]['img']) { %>style="width: 260px"<% } %>>
+        <div class="chose-title"><%= data.title %></div>
+        <div class="chose-body">
+
+        </div>
+        <% if (data.buttonText) { %>
+        <div class="btn-wrap">
+            <button class="btn btn-inverse btn-theme"><%= data.buttonText %></button>
+        </div>
+        <% } %>
+
+
+    </div>
+</div>

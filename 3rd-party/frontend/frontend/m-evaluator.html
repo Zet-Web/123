@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>build</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script data-main="js/main" src="js/lib/require.js"></script>
+
+    <!-- Stylesheets -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <script>
+        require(['app', 'modules/m-subnavigation', 'modules/m-evaluator'], function (App) {
+            App.start();
+        });
+    </script>
+
+
+</head>
+
+
+<body>
+<div id="wrapper">
+
+<div id="top-advertising" class="l-section"></div>
+
+
+<div id="top-navigation" class="l-section">
+    <div class="l-grid">
+        <div class="l-row">
+            <div class="l-full">
+
+                <div class="m-mainnavigation">
+                    <div class="navbar navbar-metro">
+                        <div class="navbar-inner">
+                            <div class="container">
+                                <a href="#" class="brand">
+                                    <img src="img/logo.png" alt="imhonet">
+                                </a>
+                                <ul class="nav">
+                                    <li class="active"><a href="#">Фильмы</a></li>
+                                    <li><a href="#">Сериалы</a></li>
+                                    <li><a href="#">Книги</a></li>
+                                    <li><a href="#">Игры</a></li>
+                                    <li><a href="#">Музыка</a></li>
+                                </ul>
+
+                                <form action="topsearch" class="navbar-search">
+                                    <input type="text" placeholder="Поиск по сайту">
+                                </form>
+                                <ul class="nav pull-right">
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Вход</a>
+                                        <ul class="dropdown-menu" style="padding-top:0">
+                                            <li>
+                                                <div class="well"
+                                                     style="margin-bottom:0;border-radius : 5px 5px 0 0; background-color: transparent; box-shadow : 0 0 0; border:0;">
+                                                    <form style="margin-bottom:0;">
+                                                        <div>
+                                                            <label class="control-label"
+                                                                   for="inputLogin">Логин</label>
+
+                                                            <div class="controls">
+                                                                <input type="text" id="inputLogin"
+                                                                       placeholder="Имя пользователя">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <label class="control-label"
+                                                                   for="inputPassword">Пароль</label>
+
+                                                            <div class="controls">
+                                                                <input type="password" id="inputPassword"
+                                                                       placeholder="* * * * * *">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="controls">
+                                                                <label class="checkbox">
+                                                                    <input type="checkbox"> Запомнить меня
+                                                                </label>
+                                                                <button type="submit" class="btn">Вход</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="subnavigation" class="l-section">
+    <div class="l-grid">
+        <div class="l-row">
+            <div class="l-full">
+                <div class="m-subnavigation expanded">
+                    <div class="m-subnavigation-item m-subnavigation-toggler">Свернуть фильтр</div>
+                    <div class="m-subnavigation-item"><a href="#">Рекомендуемое</a></div>
+                    <div class="m-subnavigation-item"><a href="#">Новинки кино</a></div>
+                    <div class="m-subnavigation-item"><a href="#">Лучшее</a></div>
+                    <div class="m-subnavigation-item"><a href="#">Подборки</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="evaluator" class="l-section">
+    <div class="l-grid">
+        <div class="l-row">
+            <div class="l-full">
+                <div class="m-evaluator">
+                    <div class="m-evaluator-forecast" data-region="m-evaluator-forecast">
+
+                    </div>
+
+                    <div class="m-evaluator-gallery" data-region="m-evaluator-gallery">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+</body>
+
+</html>

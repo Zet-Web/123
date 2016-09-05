@@ -1,0 +1,105 @@
+/* Main navigation */
+
+#subnavigation {
+	background-color: #212b3d;
+	border-bottom: 1px solid #40495a;
+}
+
+.m-subnavigation {
+	height: 45px;
+}
+
+	.m-subnavigation-item {
+		display: inline-block;
+		position: relative;
+		margin-right: 30px;
+		font-size: 1.14em;
+	}
+
+	.m-subnavigation-item:after {
+		display: none;
+		content: "";
+		width: 9px;
+		height: 9px;
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		margin: 0 0 0 -4px;
+		background-color: #212b3d;
+		border-top: 1px solid #40495a;
+		border-right: 1px solid #40495a;
+		-moz-transform: rotate(-45deg); /* Для Firefox */
+		-ms-transform: rotate(-45deg); /* Для IE */
+		-webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
+		-o-transform: rotate(-45deg); /* Для Opera */
+		transform: rotate(-45deg);
+	}
+
+		.m-subnavigation-item > a {
+			 display: block;
+			 color: #fff;
+			 line-height: 45px;
+			 background: transparent;
+		 }
+
+
+		.m-subnavigation-item.active:after {
+			display: block;
+		}
+
+		.m-subnavigation-item > a:hover
+		.m-subnavigation-item.active > a{
+			text-decoration: none;
+		}
+
+		.m-subnavigation-item-count {
+			position: relative;
+			display: inline-block;
+			top: -8px;
+			margin: 0 0 0 5px;
+			width: 18px;
+			height: 18px;
+			text-align: center;
+			line-height: 18px;
+			color: #fff;
+			font-size: 0.8em;
+			background: #7cb5d2;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		}
+
+		.m-subnavigation-toggler{
+			float: right;
+			line-height: 45px;
+			color:#59606e;
+			cursor: pointer;
+			}
+
+
+		.m-subnavigation.expanded a.active:after{
+			content : '';
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			border-width: 7px;
+			border-style : solid;
+			border-color: transparent transparent #232D3F transparent;
+			left: 50%;
+			margin-left: -10px;
+			z-index: 1;
+			bottom: -2px;
+		}
+
+		.m-subnavigation.expanded a.active:before{
+			content : '';
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			border-width: 7px;
+			border-style : solid;
+			border-color: transparent transparent #495568 transparent;
+			left: 50%;
+			margin-left: -10px;
+			bottom: -1px;
+		}
